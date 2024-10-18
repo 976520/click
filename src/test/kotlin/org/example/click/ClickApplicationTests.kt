@@ -16,8 +16,12 @@ import org.springframework.test.web.servlet.get
 @ExtendWith(SpringExtension::class, MockitoExtension::class)
 class ClickApplicationTests {
 
+	@Autowired
+	private lateinit var mockMvc: MockMvc
+
 	@Test
 	fun contextLoads() {
+		
 	}
 
 }
